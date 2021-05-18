@@ -3,7 +3,8 @@ public class Homework2 {
         System.out.println(within10and20(257, 178));
         checkNegativeOrPositive(-7);
         System.out.println(checkNegative(-7));
-        printWordNTimes("Привет", 4);
+        printWordNTimes("Привет", 5);
+        whatYear(2020);
 
     }
 
@@ -35,6 +36,14 @@ public class Homework2 {
         int i = 1;
         for (i = 0; i < times; i++) {
             System.out.println(s);
+        }
+    }
+
+    public static void whatYear(int year) {
+        if (!(year % 4 == 0) || ((year % 100 == 0) && !(year % 400 == 0))) {
+            System.out.println(year + " г. не высокосный");
+        } else {
+            System.out.println(year + " г. высокосный");
         }
     }
 }
