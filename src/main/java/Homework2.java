@@ -1,37 +1,36 @@
-package ru.lesson1.homework;
-
-import javax.swing.text.DefaultStyledDocument;
-import java.sql.SQLOutput;
-
 public class Homework2 {
-    public static void main(String[] args){
-        System.out.println(within10and20(257,178));
+    public static void main(String[] args) {
+        System.out.println(within10and20(257, 178));
         checkNegativeOrPositive(-7);
         System.out.println(checkNegative(-7));
-        printWordNTimes("Привет", 5);
+        printWordNTimes("Привет", 4);
 
     }
-    public static boolean within10and20 (int a, int b){
-        if (a + b > 9 && a + b < 21){
+
+    public static boolean within10and20(int a, int b) {
+        if (a + b > 9 && a + b < 21) {
             return true;
         } else {
             return false;
         }
     }
-    public static void checkNegativeOrPositive(int c){
+
+    public static void checkNegativeOrPositive(int c) {
         if (c < 0) {
             System.out.println("Число отрицательное");
         } else {
             System.out.println("Число положительное или равно 0");
         }
     }
-    public static boolean checkNegative(int x){
+
+    public static boolean checkNegative(int x) {
         if (x < 0) {
             return true;
         } else {
             return false;
         }
     }
+
     public static void printWordNTimes(String s, int times) {
         int i = 1;
         for (i = 0; i < times; i++) {
@@ -39,4 +38,3 @@ public class Homework2 {
         }
     }
 }
-
